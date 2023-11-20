@@ -14,6 +14,7 @@ public class Start extends JFrame {
     private JPanel cardPanel = new JPanel(cardLayout);
     private Font testFont;
 
+
     public Start() {
         super("Lego");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -33,8 +34,8 @@ public class Start extends JFrame {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        setIconImage(new ImageIcon("data\\lego_icon.jpg").getImage());
 
-        //title.setIcon(new ImageIcon("data\\title_main.png"));
         title.setFont(testFont.deriveFont(Font.BOLD, 55f));
 
         start.setBounds(290, 220, 120, 25);
